@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import faker from 'faker';
-// ./ says look in the folder we are in.
+// ./ says look in the folder we are in aka current directory
 // webpack looks for all the js files named CommentDetail
 import CommentDetail from './CommentDetail';
+import ApprovalCard from './ApprovalCard';
 
 const App = () => {
     return (
         <div className="ui container comments">
-            <CommentDetail 
-                avatar={faker.image.avatar()} 
-                author="Sam" 
-                timeAgo="Today at 4:45PM" 
-                commentText="This is wow." 
-            />
+            <ApprovalCard>
+                <CommentDetail 
+                    avatar={faker.image.avatar()} 
+                    author="Sam" 
+                    timeAgo="Today at 4:45PM" 
+                    commentText="This is wow." 
+                />
+            </ApprovalCard>
+            
             <CommentDetail 
                 avatar={faker.image.avatar()} 
                 author="Alex" 
