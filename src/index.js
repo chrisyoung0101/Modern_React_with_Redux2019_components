@@ -17,31 +17,52 @@ const App = () => {
                     commentText="This is wow." 
                 />
             </ApprovalCard>
+
+            <ApprovalCard>
+                <CommentDetail 
+                    avatar={faker.image.avatar()} 
+                    author="Alex" 
+                    timeAgo="Today at 1:00AM" 
+                    commentText="Like crazy." 
+                />
+            </ApprovalCard>
+
+            <ApprovalCard>
+                <CommentDetail 
+                    avatar={faker.image.avatar()} 
+                    author="Gigi" 
+                    timeAgo="Yesterday at 8:00AM" 
+                    commentText="What?! OMG." 
+                />
+            </ApprovalCard>
+
+
+            <ApprovalCard>
+                <CommentDetail 
+                    avatar={faker.image.avatar()} 
+                    author="Wimpy" 
+                    timeAgo="Today at 2:30PM" 
+                    commentText="Really Dude?" 
+                />
+            </ApprovalCard>
+
             
-            <CommentDetail 
-                avatar={faker.image.avatar()} 
-                author="Alex" 
-                timeAgo="Today at 1:00AM" 
-                commentText="Like crazy." 
-            />
-            <CommentDetail 
-                avatar={faker.image.avatar()} 
-                author="Gigi" 
-                timeAgo="Yesterday at 8:00AM" 
-                commentText="What?! OMG." 
-            />
-            <CommentDetail 
-                avatar={faker.image.avatar()} 
-                author="Wimpy" 
-                timeAgo="Today at 2:30PM" 
-                commentText="Really Dude?" 
-            />
-            <CommentDetail 
-                avatar={faker.image.avatar()} 
-                author="Donut" 
-                timeAgo="Yesterday at 10:00AM" 
-                commentText="What tha?! Ha Ha HA." 
-            />
+
+            <ApprovalCard>
+                <CommentDetail 
+                    avatar={faker.image.avatar()} 
+                    author="Donut" 
+                    timeAgo="Yesterday at 10:00AM" 
+                    commentText="What tha?! Ha Ha HA." 
+                />
+            </ApprovalCard>
+
+
+            
+           
+           
+            
+           
         </div>
     );
 };
